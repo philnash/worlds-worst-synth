@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>The World's Worst Synth</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>The world's worst synth</h1>
+  </header>
+
+  <section id="main">
+    <div id="synth">
+      <p>
+        <a href="#" id="play">Play</a>
+        <select id="wave">
+          <option value="0">Sine wave</option>
+          <option value="1">Square wave</option>
+          <option value="2">Sawtooth wave</option>
+          <option value="3">Triangle wave</option>
+        </select>
+          <!-- <input type="number" id="wave" value="0" min="0" max="3"> -->
+        <input type="number" id="frequency" value="440" min="40" max="10000">Hz
+      </p>
+    </div>
+    <div id="explain">
+      <p>This is the world's worst synth, it uses the JavaScript <a href="http://www.w3.org/TR/webaudio/">Web Audio API</a> to play 4 different oscillators at a frequency you choose.</p>
+      <p>It is based on <a href="http://stuartmemo.com/making-sine-square-sawtooth-and-triangle-waves/">Stuart Memo's blog post on making waves</a> and his <a href="http://jsfiddle.net/stuartmemo/xMruN/">example</a>.</p>
+      <p>This is the very beginning of what the <a href="http://www.w3.org/TR/webaudio/">Web Audio API</a> can do. Better examples are the <a href="http://www.g200kg.com/en/docs/webmodular/">g200kg synthesizer</a> or <a href="http://twitter.com/stevegraham">Stevie Graham's</a> <a href="http://jpc.heroku.com/">JPC2000</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <section id="about">
+      <p>A <a href="http://twitter.com/philnash">philnash</a> experiment</p>
+    </section>
+  </footer>
+
+  <script src="./synth.js"></script>
+</body>
+</html>
